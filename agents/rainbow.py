@@ -12,9 +12,9 @@ class RainbowDQN(DQN):
     def __init__(self, n_inputs, n_actions,
                  layer1_dims=128, layer2_dims=128, adam_lr=1e-3, adam_epsilon=1.5e-4, adam_clip=None,
                  gamma=0.99, epsilon_decay=0.001, epsilon_min=0.01, epsilon_eval=0.001, tau=0.001,
-                 batch_size=128, update_steps=100, update_soft=False, reward_max=None,
+                 batch_size=64, update_steps=100, update_soft=False, reward_max=None,
                  mem_size=100000, warmup=1000,
-                 per_alpha=0.6, per_beta=0.4, per_beta_inc=1e-4, per_offset=0.001, per_error_max=1.0,
+                 per_alpha=0.7, per_beta=0.5, per_beta_inc=1e-4, per_offset=0.001, per_error_max=1.0,
                  n_step=1, sigma_init=0.5, n_atoms=51, v_max=10, v_min=None):
 
         self.sigma_init = sigma_init
